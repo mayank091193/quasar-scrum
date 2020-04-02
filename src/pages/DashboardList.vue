@@ -84,7 +84,7 @@
           @start="drag = true"
           @end="drag = false"
         >
-          <q-list v-for="(element, index) in task_list" bordered class="rounded-borders cursor-move"
+          <q-list v-for="(element, index) in task_list" :key="index" bordered class="rounded-borders cursor-move"
                   :class="task_class[element.type]">
             <q-item class="bg-white">
               <q-item-section avatar>
