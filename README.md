@@ -65,7 +65,7 @@ Do reach out to me at "mayank091193@gmail.com" for queries.
 **Grid View**
 <p float="left">
 	<kbd>
-<img src="assets/GridView.png" border="1" alt="Grid View"
+<img src="assets/GridView.gif" border="1" alt="Grid View"
 	title="Grid View"  />
 		</kbd>
 </p>
@@ -73,7 +73,7 @@ Do reach out to me at "mayank091193@gmail.com" for queries.
 **List View**
 <p float="left">
 	<kbd>
-<img src="assets/ListView.png" border="1" alt="List View"
+<img src="assets/ListView.gif" border="1" alt="List View"
 	title="List View"  />
 	</kbd>
 </p>
