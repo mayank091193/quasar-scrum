@@ -14,9 +14,11 @@
 
         <q-toolbar-title v-if="$q.screen.gt.sm" shrink class="row items-center no-wrap">Quasar Scrum</q-toolbar-title>
 
-        <q-space />
+        <q-space/>
 
         <div class="q-gutter-sm row items-center no-wrap">
+          <a style="font-size: 30px;" class="float-right" href="https://github.com/sponsors/mayank091193"
+             target="_blank" title="Donate"><i class="fas fa-heart" style="color: #eb5daa"></i></a>
           <q-btn round dense flat icon="apps">
             <q-tooltip>Customize</q-tooltip>
           </q-btn>
@@ -26,7 +28,7 @@
           </q-btn>
           <q-btn round flat>
             <q-avatar size="26px">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
+              <img src="https://cdn.quasar.dev/img/boy-avatar.png"/>
             </q-avatar>
             <q-tooltip>Account</q-tooltip>
           </q-btn>
@@ -37,66 +39,68 @@
       </q-toolbar>
     </q-header>
     <q-drawer v-model="leftDrawerOpen"
-        show-if-above
-        :mini="miniState"
-        @mouseover="miniState = false"
-        @mouseout="miniState = true"
-        mini-to-overlay
-        bordered
-        content-class="bg-grey-3">
+              show-if-above
+              :mini="miniState"
+              @mouseover="miniState = false"
+              @mouseout="miniState = true"
+              mini-to-overlay
+              bordered
+              content-class="bg-grey-3">
       <q-list>
-          <q-item active-class="tab-active" to="/home" exact class="q-ma-none navigation-item" clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="home"/>
-            </q-item-section>
+        <q-item active-class="tab-active" to="/home" exact class="q-ma-none navigation-item" clickable v-ripple>
+          <q-item-section avatar>
+            <q-icon name="home"/>
+          </q-item-section>
 
-            <q-item-section>
-              Home
-            </q-item-section>
-          </q-item>
-          <q-item active-class="tab-active" to="/dashboard-grid" exact class="q-ma-none navigation-item" clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="dashboard"/>
-            </q-item-section>
+          <q-item-section>
+            Home
+          </q-item-section>
+        </q-item>
+        <q-item active-class="tab-active" to="/dashboard-grid" exact class="q-ma-none navigation-item" clickable
+                v-ripple>
+          <q-item-section avatar>
+            <q-icon name="dashboard"/>
+          </q-item-section>
 
-            <q-item-section>
-              Dashboard - Grid
-            </q-item-section>
-          </q-item>
-          <q-item active-class="tab-active" to="/dashboard-list" exact class="q-ma-none navigation-item" clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="view_headline"/>
-            </q-item-section>
+          <q-item-section>
+            Dashboard - Grid
+          </q-item-section>
+        </q-item>
+        <q-item active-class="tab-active" to="/dashboard-list" exact class="q-ma-none navigation-item" clickable
+                v-ripple>
+          <q-item-section avatar>
+            <q-icon name="view_headline"/>
+          </q-item-section>
 
-            <q-item-section>
-              Dashboard - List
-            </q-item-section>
-          </q-item>
+          <q-item-section>
+            Dashboard - List
+          </q-item-section>
+        </q-item>
       </q-list>
     </q-drawer>
 
     <q-page-container style="background-color:#f4f4f4">
-      <router-view />
+      <router-view/>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import EssentialLink from "components/EssentialLink";
+    import EssentialLink from "components/EssentialLink";
 
-export default {
-  name: "MainLayout",
-  data() {
-    return {
-      leftDrawerOpen: false,
-      miniState: true,
+    export default {
+        name: "MainLayout",
+        data() {
+            return {
+                leftDrawerOpen: false,
+                miniState: true,
+            };
+        }
     };
-  }
-};
 </script>
 
 <style>
-.tab-active {
+  .tab-active {
     background-color: green;
     color: white;
   }

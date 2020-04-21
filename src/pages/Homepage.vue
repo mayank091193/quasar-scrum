@@ -47,6 +47,8 @@
         ></q-btn>
 
         <q-btn outline no-wrap no-caps label="Sign Up" class="q-ml-sm q-px-md"/>
+        <a style="font-size: 30px;" class="q-ml-sm" href="https://github.com/sponsors/mayank091193"
+           target="_blank" title="Donate"><i class="fas fa-heart" style="color: #eb5daa"></i></a>
       </q-toolbar>
     </q-header>
     <q-page-container>
